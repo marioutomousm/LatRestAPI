@@ -1,3 +1,4 @@
+//List
 const getAlCars = (req,res)=>{
     const data ={
         id : '1',
@@ -20,6 +21,7 @@ const createNewCars = (req, res)=>{
     })
 }
 
+//update
 const updateCars = (req, res) =>{
     const {id} = req.params;
     console.log('id:', id);
@@ -29,6 +31,7 @@ const updateCars = (req, res) =>{
     })
 }
 
+//delete
 const deleteCars = (req, res) =>{
     const {id} = req.params;
     res.json({
